@@ -33,7 +33,7 @@ goto menu
 
 :compileRelease
 cls
-echo Compiling for debug...
+echo Compiling for release...
 echo.
 g++ -c src/*.cpp -std=c++14 -Werror -Wfatal-errors -I C:\SFML\include -O3 -s -fexpensive-optimizations
 g++ *.o -o bin/release/Game.exe -L C:\SFML\lib -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio -lsfml-network
@@ -42,7 +42,7 @@ goto menu
 
 :compileRunRelease
 cls
-echo Compiling for debug...
+echo Compiling for release...
 echo.
 g++ -c src/*.cpp -std=c++14 -Werror -Wfatal-errors -I C:\SFML\include -O3 -s -fexpensive-optimizations
 g++ *.o -o bin/release/Game.exe -L C:\SFML\lib -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio -lsfml-network
